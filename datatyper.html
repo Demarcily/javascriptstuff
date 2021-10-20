@@ -14,19 +14,20 @@
       description: 'Världens starkaste björn',
       quote: 'Det är modigt att våga säga att man är rädd'
     };
-    console.log(bamse.quote);
-    bamse.quote = 'Man ska vara snäll mot dem som är stygga, för de behöver det mest, och då blir de kanske snällare';
-    console.log(bamse.quote);
-    
+
     let skalman = {
       name: 'Skalman',
       animal: 'sköldpadda'
     };
 
-    let friends = [];
+    let friends = [bamse, skalman, 'Lille Skutt']
+    let enemies = ['Krösus Sork', 'Sjörövarna', 'Reinard Räv']
 
-    friends.push(bamse);
-    console.log(bamse[0]);
+    let arraynumber = prompt('Välj ett nummer mellan 0 och 2');
+    console.log(friends[arraynumber]);
+
+    console.log(friends.length);
+    console.log(enemies.length);
 
 
 

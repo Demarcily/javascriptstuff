@@ -7,20 +7,36 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Help</h1>
   <script>
-    console.log('Addition');
+  
+    alert('Addition');
     let num1 = parseInt(prompt('Skriv ett tal: '));
     let num2 = parseInt(prompt('Skriv ett annat tal: '));
     let sum = num1 + num2;
+    let result = `Summan av ${num1} + ${num2} är ${sum}`;
+    alert(result);
+    console.log(result);
 
-    if (num1 === 9 & num2 === 10) {
-      sum = sum + 2;
-    }
+    alert('Substraktion');
+    sum = num1 - num2;
+    result = `Differensen av ${num1} - ${num2} är ${sum}`;
+    alert(result);
+    console.log(result);
 
-    console.log(`Summan av ${num1} + ${num2} är ${sum}`)
-    let message = 'Summan av ' + num1 + ' + ' + num2 + ' är ' + sum;
-    console.log(message);
+    alert('Multiplikation');
+    sum = num1 * num2;
+    result = `Produkten av ${num1} * ${num2} är ${sum}`;
+    alert(result);
+    console.log(result);
+
+    alert('Division');
+    sum = num1 / num2;
+    result = `kvoten av ${num1} / ${num2} är ${sum}`;
+    alert(result);
+    console.log(result);
+
+
+
   </script>
 </body>
 </html>
